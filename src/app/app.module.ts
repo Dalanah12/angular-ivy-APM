@@ -7,8 +7,8 @@ import { HelloComponent } from './hello.component';
 import { CityListComponent } from './cities/city-list.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports: [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, CityListComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
