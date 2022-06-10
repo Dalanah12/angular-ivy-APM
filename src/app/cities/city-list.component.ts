@@ -4,5 +4,6 @@ import { Component } from "@angular/core";
   templateUrl: './city-list.component.html'
 })
 export class CityListComponent {
-
+  pageTitle: string = 'Cities';
+  cities: any[];
 }

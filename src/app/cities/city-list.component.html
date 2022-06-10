@@ -1,0 +1,42 @@
+<div class='card'>
+<div class='card-header'>
+  {{pageTitle}}
+</div>
+<div class='card-body'>
+  <div class='row'>
+    <div class='col-md-2'></div>
+    <div class='col-md-4'>
+      <input type='text'
+             [(ngModel)]=/>
+    </div>
+  </div>
+  <div class='row'
+       *ngIf='listFilter'>
+    <div class='col-md-6'>
+    </div>
+  </div>
+  <div class='table-responsive'>
+    <table class='table'
+           *ngIf='cities.length'>
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Temperature</th>
+          <th>Clouds</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let city of cities'>
+          <td>city.name</td>
+          <td>temperature.value</td>
+          <td>clouds.value</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<div *ngIf='errorMessage'
+   class='alert alert-danger'>
+Error: {{ errorMessage }}
+</div>
